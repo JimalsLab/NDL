@@ -3,4 +3,19 @@
   .body-content {
     padding-top: 50px;
   }
+
+  .tilesmall {
+    height: 400px;
+    width: 400px;
+    max-height: 400px;
+    max-width: 400px;
+  }
+
+  .tilebig {
+    height: 400px;
+    width: 600px;
+    max-height: 400px;
+    max-width: 400px;
+    
+  }
 }
