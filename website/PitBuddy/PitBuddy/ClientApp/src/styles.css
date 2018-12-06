@@ -8,3 +8,9 @@
   background-color: #3e92d2;
   color: white;
 }
+
+.height-max{
+  height:100%;
+  min-height:100%;
+  max-height:100%;
+}
