@@ -8,13 +8,23 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { WeatherComponent } from './weather/weather.component';
+import { InventoryComponent } from './inventory/inventory.component';
+import { HealthComponent } from './health/health.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    WeatherComponent,
+    InventoryComponent,
+    HealthComponent,
+    ChatbotComponent,
+    TasksComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
