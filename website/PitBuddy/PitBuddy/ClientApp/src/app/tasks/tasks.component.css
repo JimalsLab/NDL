@@ -1,6 +1,12 @@
 
 .task{
   width:100%;
-  background-color:lightblue;
+  background-color:lightgray;
+  margin-bottom:5px;
+  padding-top:15px;
+}
+
+.orange{
+  background-color:#F1B080;
 }
 

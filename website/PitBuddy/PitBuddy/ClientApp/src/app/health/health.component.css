@@ -8,26 +8,26 @@ td, th, tr {
 
 .thermometre {
   height: 100%;
-  width: 37%;
+  width: 50%;
   margin-left: 5%;
 }
 
 .heartbeat {
   height: 100%;
-  width: 35%;
-  margin-left: 10%;
+  width: 50%;
+  margin-left: 5%;
 }
 
 .poid {
   height: 100%;
-  width: 35%;
-  margin-left: 6%;
+  width: 50%;
+  margin-left: 5%;
 }
 
 .oxygen {
   height: 100%;
-  width: 35%;
-  margin-left: 10%;
+  width: 50%;
+  margin-left: 5%;
 }
 
 .case {

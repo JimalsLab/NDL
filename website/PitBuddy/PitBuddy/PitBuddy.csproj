@@ -24,6 +24,13 @@
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="ClientApp\src\assets\images\heartbeat.png" />
+    <Content Include="ClientApp\src\assets\images\oxygen.png" />
+    <Content Include="ClientApp\src\assets\images\poid.png" />
+    <Content Include="ClientApp\src\assets\images\thermometre.png" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">

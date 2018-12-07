@@ -20,7 +20,7 @@ class Sketch {
     preload() {
         loadFont('/assets/fonts/POLYA.otf');
 	}
-	setup() {
+    setup() {
 		for (var i = 0; i < 200; i++) {
 			this.stars[i] = new Star();
 		}
@@ -30,11 +30,10 @@ class Sketch {
 	draw() {
         p.background(51);
 
-        if (frameCount > 25) {
+        if (frameCount > 250) {
             document.getElementById('divToHide').setAttribute('style', 'height:100%; min-height:100%; max-height:100%; display: block');
             remove();
-            var canvas = document.getElementsById('InitLoadingCanvas');
-            canvas.parentNode.removeChild(canvas);
+            return;
         }
         if (frameCount == 70) {
             stopStars = true;
