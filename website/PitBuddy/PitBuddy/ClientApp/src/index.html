@@ -1,14 +1,60 @@
 ﻿<!doctype html>
 <html lang="en" style="height:100%; min-height:100%; max-height:100%">
 <head>
-  <meta charset="utf-8">
-  <title>PitBuddy</title>
-  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script language="javascript" type="text/javascript" src="code/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="code/star.js"></script>
+  <script language="javascript" type="text/javascript" src="code/stringDot.js"></script>
+  <script language="javascript" type="text/javascript" src="code/sketch.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>var sketch = new Sketch();
+
+		function preload() {
+			sketch.preload();
+		}
+
+		function setup() {
+			frameRate(30);
+			var canvasDiv = document.getElementById("sketch-holder");
+			p.fullscreen(true);
+			createCanvas(windowWidth, windowHeight);
+			sketch.setup();
+		}
+
+		function draw() {
+			sketch.draw();
+		}
+
+		function windowResized() {
+			resizeCanvas(windowWidth, windowHeight);
+			sketch.setupBoidsForWord(sketch.text, true);
+		}
+
+
+		/*
+		function changeText(txt) {
+			sketch.setupBoidsForWord(txt, false);
+		}
+
+		function changeSize(size) {
+			sketch.dotSize = isNaN(parseInt(size,10)) ? 1 : size;
+			sketch.setupBoidsForWord(document.getElementById("theText").value, true);
+		}
+
+		function changeResolution(res) {
+			sketch.sampleFactor = isNaN(parseInt(res,10)) ? 1 : res;
+			sketch.setupBoidsForWord(document.getElementById("theText").value, true);
+		}
+		*/</script>
+
+  <base href="/">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body style="height:100%; min-height:100%; max-height:100%">
-  <app-root style="height:100%; min-height:100%; max-height:100%" class="height-max">Loading...</app-root>
+  <div style="display: none; height:100%; min-height:100%; max-height:100%" id="divToHide">
+    <app-root style=" height:100%; min-height:100%; max-height:100%" class="height-max">Loading...</app-root>
+  </div>
+  
 </body>
 </html>

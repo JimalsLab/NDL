@@ -1,0 +1,71 @@
+.container {
+  margin-top:70px;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  overflow: hidden;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.gauge-a {
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(33,39,97,0.2);
+  width: 200px;
+  height: 100px;
+  top: 0%;
+  border-radius: 125px 125px 0px 0px;
+}
+
+.gauge-b {
+  z-index: 3;
+  position: absolute;
+  background-color: white;
+  width: 125px;
+  height: 62.5px;
+  top: 37.5px;
+  margin-left: 37.5px;
+  margin-right: auto;
+  border-radius: 125px 125px 0px 0px;
+}
+
+.gauge-c {
+  z-index: 2;
+  position: absolute;
+  background-color: #5664F9;
+  width: 200px;
+  height: 100px;
+  top: 99px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px 0px 100px 100px;
+  transform-origin: center top;
+  animation: 1s ease 0s 1 rotateMdr forwards;
+}
+
+@keyframes rotateMdr {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(.3turn);
+  }   
+}
+
+
+.gauge-data {
+  z-index: 4;
+  color: black;
+  font-size: 1.5em;
+  line-height: 25px;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 1s ease-out;
+}
